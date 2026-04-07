@@ -1,0 +1,15 @@
+rules_version = '2';
+
+// Regles de Firebase Storage per a la pràctica
+// ATENCIÓ: Permeten accés total sense autenticació.
+// Adequades NOMÉS per a entorns de pràctica i proves.
+// En producció, substituir per regles que requereixin auth.
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      // Permet llegir i escriure sense autenticació
+      allow read, write: if true;
+    }
+  }
+}

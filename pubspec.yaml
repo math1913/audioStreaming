@@ -1,0 +1,31 @@
+name: reproductor_cloud
+description: Reproductor de música amb Firebase Storage i just_audio.
+publish_to: "none"
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_storage: ^12.3.0
+
+  # Reproducció d'àudio
+  just_audio: ^0.9.40
+
+  # Metadades ID3
+  audio_metadata_reader: ^2.3.0
+
+  # Fitxers temporals per a lectura de metadades
+  path_provider: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
